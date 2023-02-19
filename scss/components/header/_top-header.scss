@@ -1,0 +1,53 @@
+.top-header-block {
+    background: $color1;
+}
+.top-header {
+    @include flex;
+
+    padding: 5px 0;
+    &__item {
+        &:first-child {
+            margin-right: auto;
+        }
+        &:nth-child(2) {
+            margin-right: 20px;
+        }
+    }
+}
+.language {
+    @include flex;
+    &__item {
+        text-transform: uppercase;
+        padding-right: 10px;
+        color: $color4;
+        transition: color 0.3s;
+        cursor: pointer;
+        &:hover {
+            color: $color2;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.social {
+    $item-size: 20px;
+    @include flex;
+
+    font-size: 18px;
+    &__item {
+        a {
+            padding-right: 10px;
+            color: $color2;
+            transition: color .3s;
+            &:hover {
+                color: white;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+        
+    }
+}
