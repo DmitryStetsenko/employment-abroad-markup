@@ -109,4 +109,19 @@ a {
 }
 .social__item_facebook {
   font-size: 14px;
+}
+
+.menu-header {
+  height: 100px;
+}
+
+.hero-block {
+  background: url(./../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.hero {
+  height: 90vh;
 }/*# sourceMappingURL=style.css.map */
