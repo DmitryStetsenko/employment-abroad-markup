@@ -38,16 +38,23 @@
     font-size: 18px;
     &__item {
         a {
-            padding-right: 10px;
             color: $color2;
             transition: color .3s;
             &:hover {
                 color: white;
             }
-            &:last-child {
+            i {
+                padding-right: 10px;
+                display: block;
+            }
+        }
+        &:last-child {
+            i {
                 padding-right: 0;
             }
         }
-        
+        &_facebook {
+            font-size: 14px;
+        }
     }
 }

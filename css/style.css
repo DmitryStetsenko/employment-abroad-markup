@@ -92,7 +92,6 @@ a {
   font-size: 18px;
 }
 .social__item a {
-  padding-right: 10px;
   color: #FF9900;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -101,6 +100,13 @@ a {
 .social__item a:hover {
   color: white;
 }
-.social__item a:last-child {
+.social__item a i {
+  padding-right: 10px;
+  display: block;
+}
+.social__item:last-child i {
   padding-right: 0;
+}
+.social__item_facebook {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
