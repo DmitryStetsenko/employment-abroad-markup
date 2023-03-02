@@ -1,1 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@include addFont('../fonts/theseasons/TheSeasonsRegular', 'Seasons');
+@include addFont('../fonts/moontime/MoonTime-Regular', 'MoonTime');
+
+@include addFont('../fonts/dmsans/DMSans-Regular', 'DM Sans');
+@include addFont('../fonts/dmsans/DMSans-Bold', 'DM Sans', bold);
+
+
