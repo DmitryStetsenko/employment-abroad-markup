@@ -2,7 +2,7 @@
     background: $color1;
 }
 .top-header {
-    @include flex;
+    @include flex(flex-start, center);
 
     padding: 5px 0;
     &__item {
@@ -12,6 +12,12 @@
         &:nth-child(2) {
             margin-right: 20px;
         }
+    }
+    &__action {
+        @include flex(flex-start, center);
+    }
+    &__addit-features {
+        @include flex(flex-start, center);
     }
 }
 .language {
@@ -62,3 +68,4 @@
         }
     }
 }
+
