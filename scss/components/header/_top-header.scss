@@ -35,26 +35,30 @@
     $item-size: 20px;
     @include flex;
 
-    font-size: 18px;
+    font-size: 12px;
     &__item {
+        margin-right: 5px;
         a {
-            color: $color2;
-            transition: color .3s;
+            @include flex(center, center);
+
+            color: $color1;
+            transition: background .3s;
+            width: $item-size;
+            height: $item-size;
+            border-radius: 50%;
+            background: $color2;
             &:hover {
-                color: white;
+                background: white;
             }
             i {
-                padding-right: 10px;
                 display: block;
             }
         }
         &:last-child {
-            i {
-                padding-right: 0;
-            }
+            margin-right: 0;
         }
-        &_facebook {
-            font-size: 14px;
+        &_instagram {
+            font-size: 16px;
         }
     }
 }

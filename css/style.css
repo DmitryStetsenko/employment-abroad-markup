@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 :root {
   font-size: 16px;
 }
@@ -11,7 +10,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: sans-serif;
 }
 
 ul, li {
@@ -40,9 +39,9 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   padding: 5px 0;
 }
 .top-header__item:first-child {
@@ -59,9 +58,9 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .language__item {
   text-transform: uppercase;
@@ -86,29 +85,44 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  font-size: 12px;
+}
+.social__item {
+  margin-right: 5px;
+}
+.social__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
-}
-.social__item a {
-  color: #FF9900;
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
+  color: #2B3245;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FF9900;
 }
 .social__item a:hover {
-  color: white;
+  background: white;
 }
 .social__item a i {
-  padding-right: 10px;
   display: block;
 }
-.social__item:last-child i {
-  padding-right: 0;
+.social__item:last-child {
+  margin-right: 0;
 }
-.social__item_facebook {
-  font-size: 14px;
+.social__item_instagram {
+  font-size: 16px;
 }
 
 .menu-header {
