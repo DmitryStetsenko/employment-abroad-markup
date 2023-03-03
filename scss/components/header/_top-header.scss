@@ -48,23 +48,22 @@
 }
 
 .social {
-    $item-size: 30px;
+    $item-size: 20px;
+    $font-size: 16px;
     @include flex;
 
-    font-size: 12px;
+    font-size: $font-size;
     &__item {
         margin-right: 5px;
         a {
             @include flex(center, center);
 
-            color: $color1;
-            transition: background .3s;
+            color: $color2;
+            transition: color .3s;
             width: $item-size;
             height: $item-size;
-            border-radius: 50%;
-            background: $color2;
             &:hover {
-                background: white;
+                color: white;
             }
             i {
                 display: block;
@@ -74,7 +73,7 @@
             margin-right: 0;
         }
         &_instagram {
-            font-size: 16px;
+            font-size: $font-size + 4px;
         }
     }
 }

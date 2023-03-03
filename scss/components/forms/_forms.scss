@@ -1,0 +1,41 @@
+input,
+button,
+label {
+    display: block;
+    border: none;
+    background: transparent;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.search-form {
+    @include flex(center, center);
+    padding: 15px;
+    border: 1px solid $color5;
+    max-width: 400px;
+    width: 400px;
+    color: $color4;
+    &__icon {
+        margin-right: 10px;
+    }
+    &__input {
+        width: 100%;
+    }
+}
+
+.btn {
+    padding: 15px 25px;
+    display: inline-block;
+    background: $color2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    &_start {}
+    &_full {
+        width: 100%;
+    }
+}
