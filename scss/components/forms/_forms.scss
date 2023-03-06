@@ -45,3 +45,78 @@ button:focus {
         width: 100%;
     }
 }
+
+.user-action {
+    $size: 50px;
+    $iconSize: 20px;
+    position: fixed;
+    z-index: 100;
+    bottom: 50px;
+    right: 100px;
+    &__item {
+        @include flex(center, center);
+        width: $size;
+        height: $size;
+        color: rgba($color2, .5);
+        font-size: $iconSize;
+        cursor: pointer;
+        background: rgba(white, .2);
+        margin: 2px;
+        &:hover {
+            background: $color2;
+            color: $color1;
+        }
+    }
+}
+
+.toggle-tabs {
+    @include flex(center, center);
+}
+.btn-tab {
+    @include flex(center, center);
+    $mainColor: darken($color1, 10);
+    
+    width: 250px;
+    height: 80px;
+    background: white;
+    color: $mainColor;
+    border: 2px solid transparent;
+    &::before {
+        @include flex(center, center);
+        $size: 30px;
+
+        content: attr(data-number);
+        width: $size;
+        height: $size;
+        font-size: 20px;
+        // font-weight: bold;
+        border-radius: 50%;
+        background: $mainColor;
+        color: white;
+        margin-right: 10px
+    }
+
+    &__content {
+        span {
+            display: block;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__subscr {
+        font-size: 12px;
+    } 
+
+    &_active {
+        $mainColor: darken($color1, 10);
+    
+        background: $mainColor;
+        color: white;
+        &::before {
+            background: white;
+            color: $mainColor;
+        }
+    }
+}
