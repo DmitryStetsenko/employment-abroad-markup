@@ -11,6 +11,7 @@
 
 body {
   font-family: sans-serif;
+  position: relative;
 }
 
 ul, li {
@@ -32,6 +33,12 @@ a {
   height: 100%;
 }
 
+.section-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #372B54;
+}
+
 input,
 button,
 label {
@@ -43,6 +50,10 @@ label {
 input:focus,
 button:focus {
   outline: none;
+}
+
+fieldset {
+  border: none;
 }
 
 .search-form {
@@ -84,6 +95,113 @@ button:focus {
 }
 .btn_full {
   width: 100%;
+}
+
+.user-action {
+  position: fixed;
+  z-index: 100;
+  bottom: 50px;
+  right: 100px;
+}
+.user-action__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  color: rgba(255, 153, 0, 0.5);
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 2px;
+}
+.user-action__item:hover {
+  background: #FF9900;
+  color: #372B54;
+}
+
+.toggle-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 80px;
+  background: white;
+  color: #211a32;
+  border: 2px solid transparent;
+  -webkit-transition: color 0.3s, background 0.3s;
+  -o-transition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s;
+  cursor: pointer;
+}
+.btn-tab::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: attr(data-number);
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #211a32;
+  color: white;
+  margin-right: 10px;
+}
+.btn-tab:hover {
+  background: #211a32;
+  color: white;
+}
+.btn-tab:hover::before {
+  background: white;
+  color: #211a32;
+}
+.btn-tab__content span {
+  display: block;
+}
+.btn-tab__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-tab__subscr {
+  font-size: 12px;
+}
+.btn-tab_active {
+  background: #211a32;
+  color: white;
+}
+.btn-tab_active::before {
+  background: white;
+  color: #211a32;
 }
 
 .top-header-block {
@@ -399,68 +517,26 @@ button:focus {
           transform: translateX(-50%);
 }
 
-.toggle-tabs {
+.section {
+  padding: 50px 0;
+}
+.section__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
-
-.btn-tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 250px;
-  height: 80px;
-  background: white;
-  color: #211a32;
-  border: 2px solid transparent;
+.section__sidebar {
+  padding-right: 50px;
+  border-right: 1px solid #C0C0C0;
+  width: 30%;
 }
-.btn-tab::before {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  content: attr(data-number);
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-  border-radius: 50%;
-  background: #211a32;
-  color: white;
-  margin-right: 10px;
-}
-.btn-tab__content span {
-  display: block;
-}
-.btn-tab__title {
-  font-size: 20px;
-  font-weight: bold;
-}
-.btn-tab__subscr {
-  font-size: 12px;
-}
-.btn-tab_active {
-  background: #211a32;
-  color: white;
-}
-.btn-tab_active::before {
-  background: white;
-  color: #211a32;
+.section__content {
+  width: 100%;
+  padding-left: 50px;
 }/*# sourceMappingURL=style.css.map */

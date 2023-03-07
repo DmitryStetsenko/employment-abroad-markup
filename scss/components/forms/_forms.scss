@@ -11,6 +11,10 @@ button:focus {
     outline: none;
 }
 
+fieldset {
+    border: none;
+}
+
 .search-form {
     @include flex(center, center);
     padding: 15px;
@@ -81,6 +85,8 @@ button:focus {
     background: white;
     color: $mainColor;
     border: 2px solid transparent;
+    transition: color .3s, background .3s;
+    cursor: pointer;
     &::before {
         @include flex(center, center);
         $size: 30px;
@@ -94,6 +100,16 @@ button:focus {
         background: $mainColor;
         color: white;
         margin-right: 10px
+    }
+    &:hover {
+        $mainColor: darken($color1, 10);
+    
+        background: $mainColor;
+        color: white;
+        &::before {
+            background: white;
+            color: $mainColor;
+        }
     }
 
     &__content {
