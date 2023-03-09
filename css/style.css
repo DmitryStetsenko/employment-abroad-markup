@@ -542,6 +542,9 @@ fieldset {
   width: 100%;
   padding-left: 50px;
 }
+.section__title-block {
+  margin-bottom: 20px;
+}
 .filter-block {
   margin-bottom: 20px;
 }
@@ -574,4 +577,174 @@ fieldset {
 }
 .filter-item__checkbox {
   margin-right: 10px;
+}
+.vacancies__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background: #E9E9E9;
+  margin-bottom: 20px;
+}
+.vacancies__info-block {
+  margin-right: auto;
+}
+.vacancies__info span {
+  font-weight: bold;
+}
+.vacancies__sort-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.vacancies__sort-block:first-child {
+  margin-right: 20px;
+}
+.vacancy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.vacancy:last-child {
+  margin-bottom: 0;
+}
+.vacancy__content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 15px;
+}
+.vacancy__thumbnail {
+  width: 160px;
+  min-width: 160px;
+  height: 160px;
+  margin-right: 15px;
+}
+.vacancy__thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.vacancy__title {
+  margin-bottom: 5px;
+}
+.vacancy__meta {
+  margin-bottom: 20px;
+}
+.vacancy__salary-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  background: #E9E9E9;
+}
+.vacancy__salary {
+  margin-bottom: 10px;
+}
+.vacancy__details {
+  padding: 10px 40px;
+  background: #FF9900;
+  color: white;
+}
+
+.meta-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.meta-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  color: #C0C0C0;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.meta-info__item:last-child {
+  margin-right: 0;
+}
+.meta-info__item-icon {
+  margin-right: 5px;
+}
+.meta-info__item-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.meta-info__item-value a {
+  color: #C0C0C0;
+  margin-right: 5px;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.meta-info__item-value a:hover {
+  color: #FF9900;
+}
+.meta-info__item-value a::after {
+  content: ",";
+}
+.meta-info__item-value a:last-child {
+  margin-right: 0;
+}
+.meta-info__item-value a:last-child::after {
+  content: "";
 }/*# sourceMappingURL=style.css.map */
