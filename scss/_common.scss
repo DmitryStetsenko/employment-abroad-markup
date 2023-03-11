@@ -23,6 +23,10 @@ a {
     color: $color1;
 }
 
+h1, h2 {
+    font-family: $fontTitle;
+}
+
 .container {
     max-width: 1440px;
     padding: 0 30px;
