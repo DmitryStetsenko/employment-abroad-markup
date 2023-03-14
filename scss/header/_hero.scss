@@ -40,12 +40,34 @@
     &__title-block {
         position: relative;
         color: white;
+        &::before {
+            $substraitSize: 300px;
+            content: "";
+            display: block;
+            width: $substraitSize;
+            height: $substraitSize;
+            border-radius: 50%;
+            background: 
+                repeating-linear-gradient(
+                    45deg, 
+                    $color5,
+                    $color5, 
+                    transparent 2px, 
+                    transparent 7px
+                );
+            position: absolute;
+            top: -50px;
+            right: 0;
+            opacity: .3;
+        }
     }
     &__title {
         font-size: 4.5rem;
         text-transform: uppercase;
         font-weight: bolder;
         margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
     }
     &__subtitle {
         margin-bottom: 100px;
@@ -61,6 +83,7 @@
         background: #CE2021;
         color: white;
         position: absolute;
+        z-index: 2;
         top: 0;
         right: 0;
         font-size: 30px;
